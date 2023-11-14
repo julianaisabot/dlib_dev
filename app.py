@@ -23,8 +23,8 @@ class VideoProcessor:
             point = [faceLandmarks.part(i).x, faceLandmarks.part(i).y]
             points.append(point)
 
-    points = np.array(points, dtype=np.int32)
-    cv2.polylines(image, [points], isClosed, (255, 200, 0), thickness=2, lineType=cv2.LINE_8)
+        points = np.array(points, dtype=np.int32)
+        cv2.polylines(image, [points], isClosed, (255, 200, 0), thickness=2, lineType=cv2.LINE_8)
     
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
