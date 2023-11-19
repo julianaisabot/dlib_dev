@@ -39,7 +39,9 @@ class VideoProcessor:
             
 
         #	for(i, y) in s:
-        #		cv2.circle(img, (i,y), 2, (0, 255, 0), -1)
+        #	cv2.circle(img, (i,y), 2, (0, 255, 0), -1)
+
+        # count number of landmarks we actually detected on image
 
         if i==0:
                 print("Total number of face landmarks detected ",len(s_.parts()))
